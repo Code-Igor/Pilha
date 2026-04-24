@@ -42,8 +42,14 @@ public class Pilha {
             return valorRemovido;
         }
     }
-
-    public boolean verificarVazio() {
-        return false;
+    public boolean pilhaVazia() {
+        if (topo == -1) {
+            System.out.println("pilha está vazia!");
+            return true;
+        }
+        else {
+            System.out.println("pilha não está vazia!");
+            return false;
+        }
     }
 }
