@@ -28,11 +28,18 @@ public class Pilha {
             vetor[topo] = valor;
             // +1 numero de elementos
             topo++;
+        }
+    }
+
+    public void desempilhar() {
+        if (topo == -1) {
+            throw new IllegalStateException("pilha vazia, não é possível remover elemento");
+        }
+        else {
 
 
         }
     }
-
 
     public boolean verificarVazio() {
         return false;
