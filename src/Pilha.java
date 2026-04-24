@@ -1,5 +1,5 @@
 public class Pilha {
-    // criando a estrutura de dados pilha (FIFO), baseada em vetor
+    // criando a estrutura de dados pilha (LIFO), baseada em vetor
 
     private Integer[] vetor;
     private int tamanho;
