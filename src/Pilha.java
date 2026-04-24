@@ -23,13 +23,10 @@ public class Pilha {
             throw new ArithmeticException("overflow da pilha!");
         }
         else {
-
-            // insiro no vetor
-            vetor[topo] = valor;
             // +1 numero de elementos
             topo++;
-
-
+            // insiro no vetor
+            vetor[topo] = valor;
         }
     }
 
