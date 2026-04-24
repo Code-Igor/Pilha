@@ -3,14 +3,12 @@ public class Pilha {
 
     private Integer[] vetor;
     private int tamanho;
-    private int numElementos;
     private int topo;
 
     public Pilha (int tamanho) {
         this.vetor = new Integer[tamanho];
         this.tamanho = tamanho;
-        this.numElementos = 0;
-        this.topo = vetor[numElementos];
+        this.topo = -1;
     }
 
     /// Funcionalidades necessarias:
@@ -21,21 +19,20 @@ public class Pilha {
 
 
     public void empilhar(int valor) {
-        if (numElementos >= tamanho) {
+        if (topo >= tamanho) {
             throw new ArithmeticException("overflow da pilha!");
         }
         else {
 
             // insiro no vetor
-            vetor[numElementos] = valor;
+            vetor[topo] = valor;
             // +1 numero de elementos
-            numElementos++;
-            // o novo valor é o novo topo
-            topo = valor;
+            topo++;
+
+
         }
     }
 
-    public void desempilhar(int valor) {}
 
     public boolean verificarVazio() {
         return false;
