@@ -31,13 +31,16 @@ public class Pilha {
         }
     }
 
-    public void desempilhar() {
+    public Integer desempilhar() {
         if (topo == -1) {
             throw new IllegalStateException("pilha vazia, não é possível remover elemento");
         }
         else {
+            Integer valorRemovido = vetor[topo];
+            vetor[topo] = null;
+            topo--;
 
-
+            return valorRemovido;
         }
     }
 
